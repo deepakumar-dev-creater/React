@@ -60,7 +60,7 @@ function Register() {
               >
                 Login
               </button>
-              <div className="p">Register</div>
+              <div className="p">Register Page</div>
             </div>
           </form>
         </div>
