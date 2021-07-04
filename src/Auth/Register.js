@@ -4,7 +4,7 @@ function Register() {
   return (
     <div className="App">
       <div className="body">
-        <div className="w-3/5 p-10 bg-white shadow-xl login-container rounded-xl md:w-1/4">
+        <div className="p-10 bg-white shadow-xl login-container rounded-xl">
           <svg 
           
             xmlns="http://www.w3.org/2000/svg"
@@ -20,13 +20,39 @@ function Register() {
               d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
             />
           </svg>
-          <div className="mb-5 text-2xl font-semibold">Register to continue</div>
+          <div className="mb-5 text-2xl font-semibold text-center">Create an Account</div>
           <form
             autoComplete="off"
-            className="space-y-2 text-left"
+            className="space-y-2 text-left md:w-96"
             action=""
             method="POST"
           >
+             <label
+              htmlFor="Name"
+              className="block text-sm font-bold text-gray-700"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              className="block w-full h-10 appearance-none rounded-xl"
+              placeholder="Name"
+              name="Name"
+              id="Name"
+            />
+                  <label
+              htmlFor="Email"
+              className="block text-sm font-bold text-gray-700"
+            >
+              Email
+            </label>
+            <input
+              type="text"
+              className="block w-full h-10 appearance-none rounded-xl"
+              placeholder="Email"
+              name="Email"
+              id="Email"
+            />
             <label
               htmlFor="username"
               className="block text-sm font-bold text-gray-700"
@@ -41,26 +67,26 @@ function Register() {
               id="username"
             />
             <label
-              htmlFor="username"
+              htmlFor="Password"
               className="block text-sm font-bold text-gray-700"
             >
               Password
             </label>
             <input
-              type="text"
+              type="password"
               className="block w-full h-10 rounded-xl"
               placeholder="Password"
-              name="username"
-              id="username"
+              name="Password"
+              id="Password"
             />
             <div className="p-2">
               <button
-                className="block w-1/2 h-10 mx-auto font-bold bg-yellow-500 rounded-md"
+                className="block w-1/2 h-10 mx-auto font-bold rounded-md bg-primary"
                 type="submit"
               >
-                Login
+                Register
               </button>
-              <div className="p">Register Page</div>
+              <hr className="mt-4" style={{borderBottomWidth:'5px'}}/>
             </div>
           </form>
         </div>
