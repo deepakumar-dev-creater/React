@@ -60,7 +60,7 @@ function Register() {
               >
                 Login
               </button>
-              <div className="p">sfsadfs</div>
+              <div className="p">Register</div>
             </div>
           </form>
         </div>
