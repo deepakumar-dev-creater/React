@@ -12,6 +12,7 @@ function App() {
   return (
     <Switch>
       <div className="App">
+        <Route path='/'component={Login}/>
         <Route  path="/Register" component={Register}></Route>
         <Route  path="/Login" component={Login}></Route>
 
