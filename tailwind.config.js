@@ -8,7 +8,6 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-  
         black: colors.black,
         white: colors.white,
         gray: colors.coolGray,
@@ -18,8 +17,7 @@ module.exports = {
         blue: colors.blue,
         indigo: colors.indigo,
         purple: colors.violet,
-        primary: colors.pink,
-      },
+        primary: '#f9690e',      },
     },
   },
   variants: {
