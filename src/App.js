@@ -16,8 +16,8 @@ function App() {
         <Route exact path="/Login" component={Login} />
 
         <Route exact path="/Register" component={Register}></Route>
-        <Protected exact path="/Home" component={Home} />
-        <Protected exact path="/Profile" component={Profile} />
+        <Protected exact path="/Home" component={Home} Name={'Dashboard'}/>
+        <Protected exact path="/Profile" component={Profile} Name={'Profile'}/>
 
         <Route component={ErrorPage} />
       </Switch>

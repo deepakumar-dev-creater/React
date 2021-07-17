@@ -10,7 +10,7 @@ const Protected = ({ component, ...rest }) => {
       render={(props) => {
         return true ? (
           <div>
-            <Layout>
+            <Layout  name={rest.Name}>
               <RenderComponent {...props} />
             </Layout>
           </div>

@@ -1,23 +1,19 @@
 import "../index.css";
 function Header(props) {
-  if (
-    window.location.pathname === "/Login" ||
-    window.location.pathname === "/Register" ||
-    window.location.pathname === "/"
-  )
-    return null;
+ 
   const ToggleSidebar = () => {
     let Sidebar = document.querySelector(".Sidebar");
- !Sidebar.classList.contains('hidden')? Sidebar.className+=' hidden':Sidebar.classList.remove('hidden')
-//  ='hidden' ? Sidebar.className+=' hidden':Sidebar.classList.remove('hidden')
+    !Sidebar.classList.contains("hidden")
+      ? (Sidebar.className += " hidden")
+      : Sidebar.classList.remove("hidden");
   };
   return (
     <div className="flex flex-col w-screen">
-      <div className="flex h-12 bg-gray-200 border-2 shadow-md">
+      <div className="flex items-center justify-center h-12">
         <button onClick={ToggleSidebar}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-5 h-5 m-1 md:hidden"
+            className="w-6 h-6 m-2 md:hidden"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -28,9 +24,18 @@ function Header(props) {
             />
           </svg>
         </button>
+        <div className="w-full font-mono text-2xl font-semibold text-center md:text-left md:m-3">
+          {props.Name[0].name}
+        </div>
+        <div className="mx-2 my-1 ml-auto h-9 w-9">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Profil_Avatar_S.jpg/982px-Profil_Avatar_S.jpg"
+            alt="profile"
+          />
+        </div>
       </div>
 
-      {props.children}
+      {props[0].children}
     </div>
   );
 }

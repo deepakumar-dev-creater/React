@@ -2,16 +2,17 @@ import "../index.css";
 import Header from "../Includes/Header";
 import Footer from "../Includes/Footer";
 import SideBar from "../Includes/Sidebar";
-const Layout = (props) => {
+const Layout = (...props) => {
   return (
     <div className="">
       <div className="relative flex w-full">
         <SideBar />
-        <Header {...props} />
+        <Header {...props} Name={props} />
       </div>
 
       <Footer />
     </div>
+    
   );
 };
 export default Layout;
